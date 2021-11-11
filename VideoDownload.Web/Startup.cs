@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using VideoDownload.Web.Hubs;
 
 namespace VideoDownload.Web
 {
@@ -18,6 +19,7 @@ namespace VideoDownload.Web
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSignalR();
             services.AddSpaStaticFiles(config =>
             {
                 config.RootPath = "WebClient/build";
@@ -52,7 +54,10 @@ namespace VideoDownload.Web
             
             app.UseSpaStaticFiles();
             app.UseRouting();
-
+            app.UseEndpoints(config =>
+            {
+                config.MapHub<DownloadProgressHub>("/downloadhub");
+            });
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "WebClient";
