@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoDownload.Web", "VideoDownload.Web\VideoDownload.Web.csproj", "{BF66AEC5-D668-41D6-99F6-A6DDB44857A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeDl.Lib", "YoutubeDl.Lib\YoutubeDl.Lib.csproj", "{FD91E5E1-E0A8-4202-B83A-2F66D9724AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BF66AEC5-D668-41D6-99F6-A6DDB44857A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF66AEC5-D668-41D6-99F6-A6DDB44857A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF66AEC5-D668-41D6-99F6-A6DDB44857A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD91E5E1-E0A8-4202-B83A-2F66D9724AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD91E5E1-E0A8-4202-B83A-2F66D9724AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD91E5E1-E0A8-4202-B83A-2F66D9724AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD91E5E1-E0A8-4202-B83A-2F66D9724AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
