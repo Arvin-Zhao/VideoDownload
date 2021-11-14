@@ -5,7 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
-RUN apt-get update -y && apt-get install python3 -y && apt-get install python3-distutils
+RUN apt-get update -y && apt-get install python3 -y && apt-get install python3-distutils -y
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
     && python3 get-pip.py \
