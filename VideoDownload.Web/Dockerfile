@@ -5,7 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
-RUN apt update && apt install python && sudo -H pip install --upgrade youtube-dl
+RUN apt-get update -y && apt-get install python -y && sudo -H pip install --upgrade youtube-dl
 
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y \
