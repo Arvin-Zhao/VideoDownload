@@ -5,11 +5,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
-RUN apt-get update -y && apt-get install python -y 
+RUN apt-get update -y && apt-get install python3 -y 
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
-    && python get-pip.py \
-    && pip install --upgrade youtube-dl
+    && python3 get-pip.py \
+    && pip3 install --upgrade youtube-dl
 
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y \
