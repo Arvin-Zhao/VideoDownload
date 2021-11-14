@@ -68,7 +68,7 @@ namespace YoutubeDl.Lib.Models
                     RedirectStandardInput = true,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
-                    WorkingDirectory = //TODO add config of this for mapping,
+                    WorkingDirectory = "/data/download/",
                 };
                 _process = Process.Start(processStartInfo);
                 if(_process != null) _process.EnableRaisingEvents = true;
