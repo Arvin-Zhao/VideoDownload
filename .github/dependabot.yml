@@ -6,6 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/VideoDownload/VideoDownload.Web/WebClient" # Location of package manifests
+    directory: "/VideoDownload.Web/WebClient" # Location of package manifests
     schedule:
       interval: "daily"
