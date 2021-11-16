@@ -23,6 +23,7 @@ namespace VideoDownload.Web
             });
             services.AddSingleton<DownloadItemsContainer>();
             services.AddHostedService<YoutubeDownloadSyncBackgroundService>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +56,7 @@ namespace VideoDownload.Web
             app.UseRouting();
             app.UseEndpoints(config =>
             {
+                config.MapDefaultControllerRoute();
                 config.MapHub<DownloadProgressHub>("/downloadhub");
             });
             app.UseSpa(spa =>
