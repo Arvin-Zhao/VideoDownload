@@ -1,7 +1,5 @@
 import React, {Dispatch, useReducer} from "react";
 import {DownloadItemInfo} from "./youtubedl";
-import "bootstrap-icons/bootstrap-icons.svg"
-import "bootstrap-icons/font/bootstrap-icons.css"
 
 interface SortItem{
     filedName:string,
