@@ -1,3 +1,13 @@
 .smile{
     color: #3cad1f;
 }
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+.full-height{
+    height: 100%;
+}

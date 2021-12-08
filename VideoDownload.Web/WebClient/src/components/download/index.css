@@ -1,0 +1,20 @@
+.content {
+    height: calc(100% - 56px)
+}
+
+.side-bar {
+    background-color: #48454511;
+}
+
+.side-bar a {
+    color: black;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.side-bar .active {
+    background-color: aliceblue;
+    padding-bottom: 8px;
+    font-weight: bolder;
+    padding-left: 6px;
+}

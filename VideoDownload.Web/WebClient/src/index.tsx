@@ -14,7 +14,7 @@ ReactDOM.render(
           <Routes>
               <Route path="/" element={<App />} >
                 <Route index element={<HomeIndex />} />
-                  <Route path="/download" element={<DownloadIndex/>}>
+                  <Route path="download" element={<DownloadIndex/>}>
                       <Route index element={<YoutubeIndex />} />
                       <Route path={"old"} element={<YoutubeDl />} />
                   </Route>
