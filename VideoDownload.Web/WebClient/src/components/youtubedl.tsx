@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import * as signalR from "@microsoft/signalr"
 import DownloadItemsProgress from "./downloaditemsprogress"
 import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
+import {HubConnection} from "@microsoft/signalr";
 
 
 export interface DownloadItemInfo{
@@ -14,11 +15,12 @@ export interface DownloadItemInfo{
     spend:string;
 }
 
-const connection = new signalR.HubConnectionBuilder()
-    .withUrl("downloadhub")
-    .build()
+let connection:HubConnection
+    //new signalR.HubConnectionBuilder()
+    //.withUrl("downloadhub1")
+    //.build()
 
-connection.start().catch(error => document.write(error))
+//connection.start().catch(error => document.write(error))
 const allLogs:string[] = []
 
 function YoutubeDl() {

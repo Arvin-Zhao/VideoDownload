@@ -18,7 +18,11 @@ namespace VideoDownload.Web.Hubs
         {
             _downloadItemsContainer.AddItem(url);
         }
-        
+
+        public void GetUrlInfo(string url)
+        {
+            
+        }
     }
     
     

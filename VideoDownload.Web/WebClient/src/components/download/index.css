@@ -18,3 +18,25 @@
     font-weight: bolder;
     padding-left: 6px;
 }
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.show {
+    animation-name: slideInDownShow;
+    animation-duration: 1s;
+}
+
+@keyframes slideInDownShow {
+    from {
+        opacity: 0;
+        visibility: visible;
+        height: auto;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

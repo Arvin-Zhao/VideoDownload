@@ -4,7 +4,7 @@ import App from './App';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import HomeIndex from "./components/home";
-import YoutubeIndex from "./components/youtube";
+import YoutubeIndex from "./components/download/youtube";
 import DownloadIndex from "./components/download";
 import YoutubeDl from "./components/youtubedl";
 

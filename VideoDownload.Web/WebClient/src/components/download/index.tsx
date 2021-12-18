@@ -20,8 +20,6 @@ export default function DownloadIndex()
                     <Outlet />
                 </Col>
             </Row>
-
-
         </Container>
     )
 }
