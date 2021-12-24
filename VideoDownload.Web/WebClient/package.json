@@ -47,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.10",
+    "@types/jquery": "^3.5.11",
     "rimraf": "^3.0.2",
     "nth-check": ">=2.0.1",
     "immer": ">=9.0.7"
